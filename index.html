@@ -20,6 +20,8 @@
   h2 { font-size: 1.15rem; margin: 0 0 8px; }
   ul { margin: 0; padding-left: 1.2em; }
   a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: -16px 0 28px; }
+  .links a.yt { background: #e62117; color: #fff; text-decoration: none; padding: 6px 14px; border-radius: 999px; font-weight: 700; }
   footer { margin-top: 40px; color: var(--muted); font-size: .92rem; }
 </style>
 </head>
@@ -27,6 +29,8 @@
 <main>
   <h1>버터핑 <span>Butterping</span></h1>
   <p class="lead">경제, 정치와 법, 사회·문화, 지리를 1분 남짓으로 풀어 주는 사회 지식 쇼츠 채널입니다.</p>
+  <p class="links"><a class="yt" href="https://www.youtube.com/channel/UCkHLz8nby6exVPCvXUijNVQ">▶ YouTube에서 버터핑 보기</a>
+    <a href="privacy.html">개인정보처리방침</a> <a href="terms.html">이용약관</a></p>
 
   <div class="card">
     <h2>무엇을 다루나요</h2>
@@ -40,16 +44,17 @@
 
   <div class="card">
     <h2>어떻게 만드나요</h2>
-    <p style="margin:0">주제를 정하면 대본 작성, 사실 감수, 음성, 도식 그림, 편집, 업로드까지 자동 도구로 만듭니다. 이 도구는 채널 운영자 본인의 유튜브 채널에만 영상을 올립니다.</p>
+    <p style="margin:0">주제를 정하면 대본 작성, 사실 감수, 음성, 도식 그림, 편집, 업로드까지 자동 도구로 만듭니다. 이 도구는 YouTube API 서비스(YouTube Data API)를 사용하며, 채널 운영자 본인의 유튜브 채널에만 영상을 올립니다.</p>
   </div>
 
   <div class="card">
     <h2>About (English)</h2>
-    <p style="margin:0">Butterping is a YouTube Shorts channel explaining social-studies topics (economics, politics and law, society and culture, geography) in about a minute. Videos are produced with an automated tool that uploads only to the channel owner's own YouTube channel.</p>
+    <p style="margin:0">Butterping is a YouTube Shorts channel explaining social-studies topics (economics, politics and law, society and culture, geography) in about a minute. Videos are produced with an automated tool that uses YouTube API Services (YouTube Data API) and uploads only to the channel owner's own YouTube channel.</p>
   </div>
 
   <footer>
-    <a href="privacy.html">개인정보처리방침 / Privacy Policy</a>
+    <a href="privacy.html">개인정보처리방침 / Privacy Policy</a> · <a href="terms.html">이용약관 / Terms of Service</a><br>
+    This tool uses YouTube API Services. <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
   </footer>
 </main>
 </body>

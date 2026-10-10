@@ -23,7 +23,7 @@
 </head>
 <body>
 <main>
-  <p><a href="./">← 버터핑</a></p>
+  <p><a href="./">← 버터핑</a> · <a href="terms.html">이용약관</a></p>
   <h1>개인정보처리방침</h1>
   <p class="muted">대상: 버터핑 자동 업로드 도구 (Google Cloud 프로젝트 “auto-shorts”) · 시행일: 2026년 10월 10일</p>
 
@@ -49,10 +49,18 @@
   <p>이 도구가 Google API로 받은 정보의 사용과 다른 앱으로의 전송은 제한적 사용(Limited Use) 요구사항을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 따릅니다.</p>
   <p>이 도구는 YouTube API 서비스를 사용합니다. 관련 내용은 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>과 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 참고하세요.</p>
 
-  <h2>5. 권한 철회</h2>
+  <h2>5. 보관 기간과 삭제</h2>
+  <ul>
+    <li>업로드 기록(주제, 제목, 동영상 ID, 업로드 시각)은 같은 주제를 두 번 올리지 않기 위해 보관하며, 운영자가 원하면 언제든 지웁니다.</li>
+    <li>OAuth 인증 정보는 도구를 쓰는 동안만 보관합니다. 권한을 철회하거나 도구 사용을 멈추면 GitHub Secrets에서 즉시 삭제합니다.</li>
+    <li>권한을 철회한 뒤 이미 받은 YouTube API 데이터가 남아 있다면 7일 안에 삭제합니다.</li>
+    <li>삭제 요청은 아래 문의 경로로 할 수 있습니다.</li>
+  </ul>
+
+  <h2>6. 권한 철회</h2>
   <p>운영자는 언제든지 <a href="https://myaccount.google.com/permissions">Google 계정의 서드 파티 연결 관리</a>에서 이 도구의 접근 권한을 철회할 수 있습니다. 철회하면 도구는 더 이상 채널에 접근할 수 없습니다.</p>
 
-  <h2>6. 변경과 문의</h2>
+  <h2>7. 변경과 문의</h2>
   <p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다. 문의는 <a href="https://github.com/soyujoon/soyujoon.github.io/issues">GitHub 이슈</a>로 남겨 주세요.</p>
 
   <hr>
@@ -71,6 +79,9 @@
 
   <h2>Google API policies</h2>
   <p>Use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. This tool uses YouTube API Services; see the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>The upload log is kept only to avoid uploading the same topic twice and can be deleted at any time. OAuth credentials are kept only while the tool is in use and are deleted from GitHub Secrets as soon as access is revoked or the tool is retired. Any YouTube API data still held after access is revoked is deleted within 7 days. Deletion requests can be made through the contact below.</p>
 
   <h2>Revoking access</h2>
   <p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">Google Account third-party connections</a>.</p>
