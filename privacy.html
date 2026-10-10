@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 · 버터핑</title>
+<meta name="description" content="버터핑 자동 업로드 도구의 개인정보처리방침">
+<style>
+  :root { --bg: #fffaf0; --fg: #1f2330; --muted: #5b6070; --accent: #e8a817; --line: #ece4d2; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #151826; --fg: #eef0f6; --muted: #a3a8b8; --accent: #ffd046; --line: #2c3148; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; line-height: 1.75; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 72px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 6px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .muted { color: var(--muted); }
+  a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; }
+  ul { padding-left: 1.2em; }
+  hr { border: 0; border-top: 2px solid var(--line); margin: 56px 0 24px; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="./">← 버터핑</a></p>
+  <h1>개인정보처리방침</h1>
+  <p class="muted">대상: 버터핑 자동 업로드 도구 (Google Cloud 프로젝트 “auto-shorts”) · 시행일: 2026년 10월 10일</p>
+
+  <h2>1. 이 도구는 무엇인가요</h2>
+  <p>버터핑 자동 업로드 도구는 채널 운영자가 직접 만든 사회 지식 쇼츠를 운영자 본인의 유튜브 채널(버터핑)에 올리기 위한 개인용 도구입니다. 일반 사용자가 가입하거나 로그인하는 서비스가 아니며, 운영자 이외의 사람의 계정이나 정보에는 접근하지 않습니다.</p>
+
+  <h2>2. 사용하는 Google 사용자 데이터</h2>
+  <p>이 도구는 운영자가 Google OAuth로 직접 허용한 권한(YouTube Data API의 <code>youtube</code> 범위)만 사용하며, 다음 일에만 씁니다.</p>
+  <ul>
+    <li>운영자 채널에 동영상 올리기 (제목, 설명, 태그, 공개 설정 포함)</li>
+    <li>운영자 채널의 재생목록을 조회하고, 과목별 재생목록을 만들고, 올린 영상을 재생목록에 넣기</li>
+  </ul>
+  <p>시청자 정보, 댓글, 구독자 목록, 시청 기록, 연락처 등 다른 데이터는 읽거나 모으지 않습니다.</p>
+
+  <h2>3. 보관과 보호</h2>
+  <ul>
+    <li>OAuth 인증 정보(리프레시 토큰 등)는 GitHub Actions의 암호화된 Secrets에만 보관하며, 공개 저장소나 로그에 기록하지 않습니다.</li>
+    <li>업로드 기록으로는 영상 주제, 제목, 동영상 ID, 업로드 시각만 남깁니다.</li>
+    <li>Google 사용자 데이터를 판매하거나, 광고에 쓰거나, 제3자와 공유하지 않습니다.</li>
+  </ul>
+
+  <h2>4. Google API 정책 준수</h2>
+  <p>이 도구가 Google API로 받은 정보의 사용과 다른 앱으로의 전송은 제한적 사용(Limited Use) 요구사항을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 따릅니다.</p>
+  <p>이 도구는 YouTube API 서비스를 사용합니다. 관련 내용은 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>과 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 참고하세요.</p>
+
+  <h2>5. 권한 철회</h2>
+  <p>운영자는 언제든지 <a href="https://myaccount.google.com/permissions">Google 계정의 서드 파티 연결 관리</a>에서 이 도구의 접근 권한을 철회할 수 있습니다. 철회하면 도구는 더 이상 채널에 접근할 수 없습니다.</p>
+
+  <h2>6. 변경과 문의</h2>
+  <p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다. 문의는 <a href="https://github.com/soyujoon/soyujoon.github.io/issues">GitHub 이슈</a>로 남겨 주세요.</p>
+
+  <hr>
+
+  <h1>Privacy Policy</h1>
+  <p class="muted">Applies to: Butterping auto-upload tool (Google Cloud project “auto-shorts”) · Effective October 10, 2026</p>
+
+  <h2>What this tool is</h2>
+  <p>A personal tool used by the channel owner to upload their own social-studies Shorts to their own YouTube channel (Butterping). It is not a public service; no other users sign in, and it accesses no one else's account or data.</p>
+
+  <h2>Google user data we use</h2>
+  <p>Only the permission the owner granted through Google OAuth (the YouTube Data API <code>youtube</code> scope), used solely to upload videos to the owner's channel and to list, create and add videos to the owner's playlists. No viewer data, comments, subscriber lists, watch history or contacts are read or collected.</p>
+
+  <h2>Storage and sharing</h2>
+  <p>OAuth credentials are kept only in encrypted GitHub Actions secrets. The upload log keeps topic, title, video ID and upload time. Google user data is never sold, used for advertising, or shared with third parties.</p>
+
+  <h2>Google API policies</h2>
+  <p>Use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. This tool uses YouTube API Services; see the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Revoking access</h2>
+  <p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">Google Account third-party connections</a>.</p>
+
+  <h2>Changes and contact</h2>
+  <p>Changes are posted on this page with a new effective date. Contact via <a href="https://github.com/soyujoon/soyujoon.github.io/issues">GitHub issues</a>.</p>
+</main>
+</body>
+</html>
